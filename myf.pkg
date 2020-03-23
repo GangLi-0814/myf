@@ -1,6 +1,6 @@
 v 2.0
 d myf 自动生成公众号推文封面图
 
-f ./ado/myf.ado
-f ./ado/myf.hlp
-f ./ado/myfQuotes.txt
+f myf.ado
+f myf.sthlp
+f myfQuotes.txt
