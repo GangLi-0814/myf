@@ -1,7 +1,7 @@
 *! 主要用途: 自动生成公众号推文封面图
 *! 版本: 2.0
 *! 创建时间：2020/02/08
-*! 最近修改：2020/03/23
+*! 最近修改：2020/03/24
 
 cap programm drop myf
 program define myf
@@ -154,26 +154,26 @@ program define myf
 			local boxcolor "orange*0.6"
 		}
 	}
-	else if `"`scheme'"' == "s1"{  
-			local bc "yellow*4.8"
-			local boxcolor "pink*0.2"
+	else if `"`scheme'"' == "s1"{  // 墨绿色-橙色
+			local bc "green*1.8"
+			local boxcolor "248 147 29"
 	}
 
-	else if `"`scheme'"' == "s2"{
-			local bc "green*1.8"     
-			local boxcolor "yellow*0.6"
+	else if `"`scheme'"' == "s2"{ // 深蓝色-浅黄色
+			local bc "blue*3.8"     
+			local boxcolor "250 218 141"
 
 	}
-	else if `"`scheme'"' == "s3"{   
-			local bc "blue*3.8"
-			local boxcolor "orange*0.6"
+	else if `"`scheme'"' == "s3"{   // 栗色-粉红色
+			local bc "maroon*1.8"
+			local boxcolor "224 160 158"
 	}
 
 	* Saving：图片保存名称
 	if `"`saving'"' == ""{
 		scalar t = usubinstr( ///
-			usubinstr(ustrregexra(`"`title'"',"[[:punct:]]","")," ","",.) ///
-			,"$","",.)	
+			usubinstr(ustrregexra(`"`title'"',"[[:punct:]]","_")," ","_",.) ///
+			,"$","_",.)	
 		local saving = t
 	}
 	else{
@@ -192,7 +192,7 @@ program define myf
 	local tc "white"     //文字颜色
 	local tsize "*3"     // 标题字号
 	local lsize "*1.7"   // logo 字号
-	local lxhc "yellow*0.2" ////连享会 Logo 颜色
+	local lxhc "yellow*0.2" // Logo 颜色
 
 	* 绘图
 	*--------------------

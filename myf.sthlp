@@ -1,5 +1,5 @@
 {smcl}
-{* 11Feb2020}{...}
+{* 24March2020}{...}
 {cmd:help myf}{right: }
 {hline}
 
@@ -42,13 +42,13 @@
 
 {p 4 8 2}{cmd:logo(}{it:string}{cmd:)} 定义标题下方的名称，默认为连享会，可自行修改。若不需要，在括号内填入空格即可。
 
-{p 4 8 2}{cmd:url(string)} 定义名称下方的链接，默认为 {browse "www.lianxh.cn":www.lianxh.cn}，可自行修改。若不需要，在括号内填入空格即可。
+{p 4 8 2}{cmd:url(string)} 定义名称下方的链接，默认为 {browse "www.lianxh.cn":www.lianxh.cn} ，可自行修改。若不需要，在括号内填入空格即可。
 
 {p 4 8 2}{cmd:quotes(string)} 定义底部短句，默认从初始短句库中随机插入，可使用此选项自定义。
 
 {p 4 8 2}{cmd:txt} 设定短句来源，使用此选项时请确保路径下有{cmd:myfQuotes.txt}文件，如需收录新的短句，添加至{cmd:myfQuotes.txt}即可。
 
-{p 4 8 2}{cmd:scheme(s1|s2|s3)}设定配色主题。默认为根据日期随机更换。目前提供s1,s2和s3三种主题，分别是黄底粉框、绿底黄框和蓝底黄框。
+{p 4 8 2}{cmd:scheme(s1|s2|s3)}设定配色主题。默认为根据日期随机更换。目前提供s1,s2和s3三种主题，分别是绿底橙框、蓝底黄框和栗底粉框。
 
 {p 4 8 2}{cmd:saving(string)} 设定图片保存名称，默认是去除特殊字符后的标题文字，可使用此选项进行修改。
 
@@ -77,6 +77,5 @@
 {pstd}{browse "mailto:arlionn@163.com":arlionn@163.com}{p_end}
 
 {pstd}李 刚{p_end}
-{pstd}Stata连享会 (StataChina){p_end}
 {pstd}{browse "mailto:gang.li.0814@gmail.com":gang.li.0814@gmail.com}{p_end}
 
