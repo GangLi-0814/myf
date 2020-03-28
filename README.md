@@ -81,15 +81,4 @@ myf title [, Logo(string) Url(string) Quotes(string) ///
 ![s2_深蓝底色_浅黄边框](https://fig-lianxh.oss-cn-shenzhen.aliyuncs.com/s2_深蓝色_浅黄色.png)
 
 ![s3_栗色底色_粉红色](https://fig-lianxh.oss-cn-shenzhen.aliyuncs.com/s3_栗色_粉红色.png)
-\*- 默认用法
-. myf 快捷生成公众号封面图片
 
-\*- 更换 logo 和 url 等
-. myf 公众号封面, l(StataChina) u(www.gitee.com/arlionn/Course)
-
-\*- 更换短句和短句来源
-. myf 文章标题, q(好好学习，天天向上) sc(s2)
-. myf 文章标题, t
-
-\*- 更换主题、图片名称与保存路径
-. myf 文章标题, sc(s3) s(图片名称) p(yourfilepath)
